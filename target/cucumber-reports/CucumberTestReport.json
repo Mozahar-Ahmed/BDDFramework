@@ -1,0 +1,234 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3613236500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user open the browser and navigate to facebook.com",
+            "match": {
+              "location": "LandingPageFunctionality.user_open_the_browser_and_navigate_to_facebook_com()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5100982600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user see the logo is displayed",
+            "match": {
+              "location": "LandingPageFunctionality.user_see_the_logo_is_displayed()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "user not being able to login using invalid credential",
+        "description": "",
+        "id": "login-functionality-features;user-not-being-able-to-login-using-invalid-credential;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 170614500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user insert the invalid demouser1 and demopass1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demouser1",
+                  "offset": 24
+                },
+                {
+                  "val": "demopass1",
+                  "offset": 38
+                }
+              ],
+              "location": "LandingPageFunctionality.userInsertTheInvalidUsernameAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5081643000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click on the login button",
+            "match": {
+              "location": "LandingPageFunctionality.userClickOnTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8074749500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user can see the error message is displayed",
+            "match": {
+              "location": "LandingPageFunctionality.userCanSeeTheErrorMessageIsDisplayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4178947500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user close the browser",
+            "match": {
+              "location": "LandingPageFunctionality.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2337558100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user open the browser and navigate to facebook.com",
+            "match": {
+              "location": "LandingPageFunctionality.user_open_the_browser_and_navigate_to_facebook_com()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5072014600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user see the logo is displayed",
+            "match": {
+              "location": "LandingPageFunctionality.user_see_the_logo_is_displayed()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "user not being able to login using invalid credential",
+        "description": "",
+        "id": "login-functionality-features;user-not-being-able-to-login-using-invalid-credential;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 153866500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user insert the invalid demouser2 and demopass2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demouser2",
+                  "offset": 24
+                },
+                {
+                  "val": "demopass2",
+                  "offset": 38
+                }
+              ],
+              "location": "LandingPageFunctionality.userInsertTheInvalidUsernameAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5097091200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click on the login button",
+            "match": {
+              "location": "LandingPageFunctionality.userClickOnTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8076682300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user can see the error message is displayed",
+            "match": {
+              "location": "LandingPageFunctionality.userCanSeeTheErrorMessageIsDisplayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4178800700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user close the browser",
+            "match": {
+              "location": "LandingPageFunctionality.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality features",
+    "description": "",
+    "id": "login-functionality-features",
+    "keyword": "Feature",
+    "uri": "src/test/java/com/pnt/bdd/features/Login.feature"
+  }
+]
