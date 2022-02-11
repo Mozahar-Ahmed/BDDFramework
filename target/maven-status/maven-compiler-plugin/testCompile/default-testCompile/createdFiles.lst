@@ -1,9 +1,0 @@
-com\pnt\api\ApiPractice1.class
-com\pnt\bdd\stepdef\LearnAboutMeta.class
-com\pnt\bdd\stepdef\LoginPageFunctionality.class
-com\pnt\bdd\pages\LoginPage.class
-com\pnt\bdd\stepdef\LandingPageFunctionality.class
-com\pnt\bdd\TestBase.class
-com\pnt\bdd\Runner.class
-com\pnt\bdd\pages\AboutMetaPage.class
-com\pnt\bdd\pages\HomePage.class

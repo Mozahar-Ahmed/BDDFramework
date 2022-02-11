@@ -16,12 +16,13 @@ import java.util.Collections;
 import java.util.List;
 
 @CucumberOptions(features = {"src/test/java/com/pnt/bdd/features/Login.feature"},
-        glue = {"com/pnt/bdd/stepdef"},
+        // report generation in customize folder
+        glue = {"com/pnt/bdd/stepdef", "com/pnt/bdd/reports"},
         tags = {"@smoke"},
         //monochrome = false, // display the console output in readable format
         //strict = false,      // no declaration of any step , strict = false --> pass , true--> fail
         //dryRun = false,     // checking if mapping is in place
-        plugin = {"json:target/cucumber-reports/CucumberTestReport.json"}
+        plugin = {"json:reports/cucumber-reports/CucumberTestReport.json"}
 )
 public class Runner {
     private TestNGCucumberRunner testNGCucumberRunner;
@@ -48,9 +49,9 @@ public class Runner {
 
     @AfterSuite(alwaysRun = true)
     public void generateReport() {
-        File reportOutputDirectory = new File("target");
+        File reportOutputDirectory = new File("reports");
         List<String> jsonFiles = new ArrayList<String>();
-        jsonFiles.add("target/cucumber-reports/CucumberTestReport.json");
+        jsonFiles.add("reports/cucumber-reports/CucumberTestReport.json");
         String projectName = "FB signin Pages"; //change accordingly
         Configuration configuration = new Configuration(reportOutputDirectory, projectName);
         configuration.addPresentationModes(PresentationMode.RUN_WITH_JENKINS);
