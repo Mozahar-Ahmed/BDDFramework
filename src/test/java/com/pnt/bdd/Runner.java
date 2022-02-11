@@ -16,6 +16,7 @@ import java.util.Collections;
 import java.util.List;
 
 @CucumberOptions(features = {"src/test/java/com/pnt/bdd/features/Login.feature"},
+        // report generation in customize folder
         glue = {"com/pnt/bdd/stepdef", "com/pnt/bdd/reports"},
         tags = {"@smoke"},
         //monochrome = false, // display the console output in readable format
