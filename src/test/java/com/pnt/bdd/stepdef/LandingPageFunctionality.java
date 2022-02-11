@@ -17,12 +17,12 @@ public class LandingPageFunctionality {
     public void user_open_the_browser_and_navigate_to_facebook_com() {
         TestBase.setupDriver();
         TestBase.driver.get("https://www.facebook.com/");
-        TestBase.driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+        TestBase.driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
 
     }
 
-    @When("^user see the logo is displayed$")
-    public void user_see_the_logo_is_displayed() {
+    @When("^user see the FB logo is displayed$")
+    public void user_see_the_FB_logo_is_displayed() {
         homePage = PageFactory.initElements(TestBase.driver, HomePage.class);
         homePage.validateFBLogoIsDisplayed();
     }
@@ -36,6 +36,7 @@ public class LandingPageFunctionality {
     public void userInsertTheInvalidUsernameAndPassword(String username, String password) {
           homePage.validateUserCanInsertInvalidCredentials(username, password);
     }
+
     @And("^user click on the login button$")
     public void userClickOnTheLoginButton() {
         homePage.validateUserCanClickOnLoginButton();
@@ -50,5 +51,6 @@ public class LandingPageFunctionality {
     public void user_close_the_browser() {
         TestBase.driver.close();
     }
+
 
 }
